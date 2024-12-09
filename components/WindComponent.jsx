@@ -12,7 +12,7 @@ const WindComponent = async ({ lat, lon }) => {
       <div className="feature-main">
         <Image
           className="max-w-20"
-          src="/icon_wind.png"
+          src="/icons/icon_wind.png"
           alt="rain icon"
           width={80}
           height={80}
