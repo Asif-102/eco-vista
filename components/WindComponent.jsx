@@ -4,7 +4,7 @@ import Card from "./Card";
 import { getWindData } from "@/lib/weather-info";
 
 const WindComponent = async ({ lat, lon }) => {
-  const { speed, deg } = await getWindData(lat, lon);
+  const { speed, deg } = (await getWindData(lat, lon)) || {};
 
   return (
     <Card>
