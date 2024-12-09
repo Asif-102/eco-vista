@@ -22,6 +22,7 @@ export default function LocationDetector() {
         router.push(`/current?${params.toString()}`);
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathName, searchParams]);
 
   return (
