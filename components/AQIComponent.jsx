@@ -3,7 +3,7 @@ import Image from "next/image";
 import Card from "./Card";
 
 const AQIComponent = async ({ lat, lon }) => {
-  const { main, components } = await getAQIData(lat, lon);
+  const { main, components } = (await getAQIData(lat, lon)) || {};
 
   const getAQIRating = (aqi) => {
     switch (aqi) {
